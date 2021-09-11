@@ -6,6 +6,7 @@ using Azure.Storage.Queues;
 using Azure.Storage.Queues.Models;
 using Newtonsoft.Json;
 using SureAsDeath.App.Common.Models.Errors;
+using SureAsDeath.App.Common.Models.Requests.Base;
 
 namespace SureAsDeath.App.Common.Services.AzureQueueStorage
 {
@@ -85,7 +86,7 @@ namespace SureAsDeath.App.Common.Services.AzureQueueStorage
         public async Task PersistErrorAsync(string queueName, QueueError queueError)
         {
             if (queueClients.TryGetValue(queueName, out QueueClient queueClient) && queueClient.Exists())
-                await queueClient.SendMessageAsync(JsonConverter.SerializeObject(queueError));
+                await queueClient.SendMessageAsync(JsonConvert.SerializeObject(queueError));
             else
                 throw new ArgumentException($"The queue name '{queueName}' does not have an instance of Queue Client or does not exist. Provide it to the service constructor");
         }

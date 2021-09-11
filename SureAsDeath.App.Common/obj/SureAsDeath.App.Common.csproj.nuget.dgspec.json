@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/SureAsDeath.App.Common.csproj": {}
+    "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.App.Common\\SureAsDeath.App.Common.csproj": {}
   },
   "projects": {
-    "/Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/SureAsDeath.App.Common.csproj": {
+    "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.App.Common\\SureAsDeath.App.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/SureAsDeath.App.Common.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.App.Common\\SureAsDeath.App.Common.csproj",
         "projectName": "SureAsDeath.App.Common",
-        "projectPath": "/Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/SureAsDeath.App.Common.csproj",
-        "packagesPath": "/Users/orazioscavo/.nuget/packages/",
-        "outputPath": "/Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/obj/",
+        "projectPath": "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.App.Common\\SureAsDeath.App.Common.csproj",
+        "packagesPath": "C:\\Users\\federicograsso\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.App.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/orazioscavo/.config/NuGet/NuGet.Config"
+          "C:\\Users\\federicograsso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,14 +38,23 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Azure.Storage.Queues": {
               "target": "Package",
               "version": "[12.8.0, )"
             },
+            "Microsoft.Azure.Cosmos.Table": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
             }
           },
           "imports": [
@@ -60,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

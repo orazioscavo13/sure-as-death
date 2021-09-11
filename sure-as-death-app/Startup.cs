@@ -8,6 +8,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using SureAsDeath.App;
 using SureAsDeath.App.Common.Models.Configurations;
+using SureAsDeath.App.Common.Services.AzureQueueStorage;
+using SureAsDeath.App.Common.Services.AzureTableStorage;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 
@@ -42,14 +44,14 @@ namespace SureAsDeath.App
                 return options.Value;
             });
 
-            services.AddScoped<IQueueService>(sp => new QueueService(Environment.GetEnvironmentVariable("StorageConnectionAppSetting", EnvironmentVariableTarget.Process)));
+            //services.AddScoped<IQueueService>(sp => new QueueService(Environment.GetEnvironmentVariable("StorageConnectionAppSetting", EnvironmentVariableTarget.Process)));
 
-            services.AddScoped<ITableStorageService>(sp => new TableStorageService(
-                Environment.GetEnvironmentVariable("StorageConnectionAppSetting", EnvironmentVariableTarget.Process),
-                Environment.GetEnvironmentVariable("TableReference", EnvironmentVariableTarget.Process),
-                Int32.Parse(Environment.GetEnvironmentVariable("MaxBatchOperations", EnvironmentVariableTarget.Process))
-                )
-            );
+            //services.AddScoped<ITableStorageService>(sp => new TableStorageService(
+            //    Environment.GetEnvironmentVariable("StorageConnectionAppSetting", EnvironmentVariableTarget.Process),
+            //    Environment.GetEnvironmentVariable("TableReference", EnvironmentVariableTarget.Process),
+            //    Int32.Parse(Environment.GetEnvironmentVariable("MaxBatchOperations", EnvironmentVariableTarget.Process))
+            //    )
+            //);
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

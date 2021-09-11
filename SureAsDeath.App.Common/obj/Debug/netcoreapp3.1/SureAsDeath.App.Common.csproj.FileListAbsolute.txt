@@ -7,3 +7,12 @@
 /Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/obj/Debug/netcoreapp3.1/SureAsDeath.App.Common.csproj.CoreCompileInputs.cache
 /Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/obj/Debug/netcoreapp3.1/SureAsDeath.App.Common.dll
 /Users/orazioscavo/repogit/sure-as-death-app/SureAsDeath.App.Common/obj/Debug/netcoreapp3.1/SureAsDeath.App.Common.pdb
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\bin\Debug\netcoreapp3.1\SureAsDeath.App.Common.deps.json
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\bin\Debug\netcoreapp3.1\SureAsDeath.App.Common.dll
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\bin\Debug\netcoreapp3.1\SureAsDeath.App.Common.pdb
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\obj\Debug\netcoreapp3.1\SureAsDeath.App.Common.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\obj\Debug\netcoreapp3.1\SureAsDeath.App.Common.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\obj\Debug\netcoreapp3.1\SureAsDeath.App.Common.AssemblyInfo.cs
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\obj\Debug\netcoreapp3.1\SureAsDeath.App.Common.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\obj\Debug\netcoreapp3.1\SureAsDeath.App.Common.dll
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.App.Common\obj\Debug\netcoreapp3.1\SureAsDeath.App.Common.pdb
