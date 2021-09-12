@@ -8,7 +8,6 @@ namespace SureAsDeath.App.Common.Models.Requests.Base
         public Guid Id { get; set; }
         public DateTime CreatedAt { get; set; }
         public MessageType MessageType { get; set; }
-        public MessageStatus Status { get; set; }
         public AdditionalInfo AdditionalInfo { get; set; }
     }
 }

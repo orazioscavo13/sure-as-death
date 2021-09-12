@@ -6,10 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Models\Configurations\" />
-    <Folder Include="Models\Requests\EventGrid\Data\" />
-    <Folder Include="Models\Requests\EventGrid\Events\" />
     <Folder Include="Models\Requests\Queue\Messages\" />
-    <Folder Include="Models\Requests\Queue\Data\" />
     <Folder Include="Services\AzureQueueStorage\" />
     <Folder Include="Models\Errors\" />
   </ItemGroup>
@@ -18,5 +15,8 @@
     <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SureAsDeath.Core\SureAsDeath.Core.csproj" />
   </ItemGroup>
 </Project>

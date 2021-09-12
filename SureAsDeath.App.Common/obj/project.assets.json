@@ -1837,6 +1837,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "SureAsDeath.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/SureAsDeath.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SureAsDeath.Core.dll": {}
+        }
       }
     }
   },
@@ -6349,6 +6359,11 @@
         "windowsazure.storage.9.3.3.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "SureAsDeath.Core/1.0.0": {
+      "type": "project",
+      "path": "../SureAsDeath.Core/SureAsDeath.Core.csproj",
+      "msbuildProject": "../SureAsDeath.Core/SureAsDeath.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6356,6 +6371,7 @@
       "Azure.Storage.Queues >= 12.8.0",
       "Microsoft.Azure.Cosmos.Table >= 1.0.8",
       "Newtonsoft.Json >= 13.0.1",
+      "SureAsDeath.Core >= 1.0.0",
       "WindowsAzure.Storage >= 9.3.3"
     ]
   },
@@ -6385,7 +6401,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.Core\\SureAsDeath.Core.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\git\\sure-as-death\\SureAsDeath.Core\\SureAsDeath.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

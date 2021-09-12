@@ -1,0 +1,9 @@
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\bin\Debug\netcoreapp3.1\SureAsDeath.Core.deps.json
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\bin\Debug\netcoreapp3.1\SureAsDeath.Core.dll
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\bin\Debug\netcoreapp3.1\SureAsDeath.Core.pdb
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\obj\Debug\netcoreapp3.1\SureAsDeath.Core.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\obj\Debug\netcoreapp3.1\SureAsDeath.Core.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\obj\Debug\netcoreapp3.1\SureAsDeath.Core.AssemblyInfo.cs
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\obj\Debug\netcoreapp3.1\SureAsDeath.Core.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\obj\Debug\netcoreapp3.1\SureAsDeath.Core.dll
+\\Mac\Home\Documents\git\sure-as-death\SureAsDeath.Core\obj\Debug\netcoreapp3.1\SureAsDeath.Core.pdb

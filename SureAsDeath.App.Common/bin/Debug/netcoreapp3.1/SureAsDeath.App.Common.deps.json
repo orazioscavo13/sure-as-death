@@ -11,6 +11,7 @@
           "Azure.Storage.Queues": "12.8.0",
           "Microsoft.Azure.Cosmos.Table": "1.0.8",
           "Newtonsoft.Json": "13.0.1",
+          "SureAsDeath.Core": "1.0.0",
           "WindowsAzure.Storage": "9.3.3"
         },
         "runtime": {
@@ -1089,6 +1090,11 @@
             "fileVersion": "9.3.2.0"
           }
         }
+      },
+      "SureAsDeath.Core/1.0.0": {
+        "runtime": {
+          "SureAsDeath.Core.dll": {}
+        }
       }
     }
   },
@@ -1860,6 +1866,11 @@
       "sha512": "sha512-VUV8j6dzkU/7vDgk5k+ob5g7nnch2fNByr0p9aOxMGFGk+tAnTehrZ4qnClF04CVozP1GNN2zrnbsxCmr+iZBg==",
       "path": "windowsazure.storage/9.3.3",
       "hashPath": "windowsazure.storage.9.3.3.nupkg.sha512"
+    },
+    "SureAsDeath.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

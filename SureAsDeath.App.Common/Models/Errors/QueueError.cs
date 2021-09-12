@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SureAsDeath.App.Common.Models.Errors
 {
@@ -9,5 +10,6 @@ namespace SureAsDeath.App.Common.Models.Errors
         public Exception Exception { get; set; }
         public object InputData { get; set; }
         public object OutputData { get; set; }
+        public IDictionary<string, object> AdditionalData { get; set; }
     }
 }

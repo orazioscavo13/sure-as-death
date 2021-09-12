@@ -1,2 +1,7 @@
 {
+  "GlobalConfigurations": {
+    "ErrorPersistenceQueueNameSuffix": "-test",
+    "ErrorPersistenceQueueNamePrefix": "errors-",
+    "MatchesQueueName": "matches"
+  }
 }
