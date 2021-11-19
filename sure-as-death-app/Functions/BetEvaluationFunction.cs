@@ -1,4 +1,4 @@
-﻿using Microsoft.Azure.EventGrid.Models;
+﻿using Azure.Messaging.EventGrid;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.EventGrid;
 using Microsoft.Extensions.Logging;
@@ -41,7 +41,7 @@ namespace sure_as_death_app.Functions
 
         [FunctionName(nameof(BetEvaluationFunction))]
         public async Task BetEvaluation(
-            [TimerTrigger("%CronTrigger:BetEvaluation%")] TimerInfo myTimer, 
+            [TimerTrigger("%CronTrigger:BetEvaluation%")] TimerInfo myTimer,
             [EventGrid(TopicEndpointUri = "Topic:BetEvaluation:Endpoint", TopicKeySetting = "Topic:BetEvaluation:Key")] IAsyncCollector<EventGridEvent> outputEvents,
             ILogger log
             //Tabella SureBet(lettura input)
@@ -52,19 +52,17 @@ namespace sure_as_death_app.Functions
                 logger.LogInformation($"[{DateTime.Now}][{nameof(BetEvaluationFunction)}] Bet evaluation function STARTED");
 
                 await outputEvents.AddAsync(new EventGridEvent
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    EventType = $"{EventType.NewBet}",
-                    Subject = $"{EventSubject.None}",
-                    EventTime = DateTime.UtcNow,
-                    DataVersion = EventGridConstants.DataVersion,
-                    Data = new BetEvaluation
+                (
+                    $"{EventSubject.None}",
+                    $"{EventType.NewBet}",
+                    EventGridConstants.DataVersion,
+                    new BinaryData(new BetEvaluation
                     {
                         Id = Guid.NewGuid(),
                         CreatedAt = DateTime.UtcNow,
                         MessageType = MessageType.Standard
-                    }
-                });
+                    })
+                ));
 
                 logger.LogInformation($"[{DateTime.Now}][{nameof(BetEvaluationFunction)}] Data request CREATED");
             }
