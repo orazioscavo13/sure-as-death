@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Hangfire" Version="1.7.27" />
+    <PackageReference Include="Hangfire.PostgreSql" Version="1.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Hangfire\" />
+    <None Remove="Hangfire\Jobs\" />
+    <None Remove="Hangfire\Jobs\Interfaces\" />
+    <None Remove="Authorizations\" />
+    <None Remove="Hangfire" />
+    <None Remove="Hangfire.PostgreSql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Hangfire\" />
+    <Folder Include="Hangfire\Jobs\" />
+    <Folder Include="Hangfire\Jobs\Interfaces\" />
+    <Folder Include="Authorizations\" />
+  </ItemGroup>
+</Project>
