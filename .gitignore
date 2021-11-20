@@ -1,10 +1,5 @@
 
 .vs/
 
-SureAsDeath.App.Common/bin/
-
-SureAsDeath.App.Common/obj/
-
-SureAsDeath.Core/bin/
-
-SureAsDeath.Core/obj/
+bin/
+obj/
